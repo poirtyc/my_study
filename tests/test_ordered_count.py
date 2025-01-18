@@ -1,5 +1,6 @@
 import pytest
-from closure.ordered_count import say_hello_with_name, summator, counter
+
+from closure.ordered_count import counter, say_hello_with_name, summator
 
 
 @pytest.fixture

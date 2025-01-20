@@ -8,7 +8,7 @@ test:
 	uv run pytest
 
 test-coverage:
-	uv run pytest --cov=closure --cov=decorators --cov-report xml
+	uv run pytest --cov=closure --cov=decorators --cov=codewars --cov-report xml
 
 lint:
 	uv run ruff check

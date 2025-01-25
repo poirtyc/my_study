@@ -33,8 +33,5 @@ def clear_dict(dict):
 def count_all(iter_item):
     dict = {}
     for item in iter_item:
-        if item not in dict.keys():
-            dict[item] = 1
-        else:
-            dict[item] += 1
+        dict[item] = dict.get(item, 0) + 1
     return dict

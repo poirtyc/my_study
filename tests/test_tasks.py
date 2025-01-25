@@ -42,8 +42,7 @@ def test_div_con():
 
 def test_sort_gift_code():
     assert sort_gift_code("abcdef") == "abcdef"
-    assert sort_gift_code("zyxwvutsrqponmlkjihgfedcba") == \
-           "abcdefghijklmnopqrstuvwxyz"
+    assert sort_gift_code("zyxwvutsrqponmlkjihgfedcba") == "abcdefghijklmnopqrstuvwxyz"
 
 
 def test_cooking_time():

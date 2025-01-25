@@ -67,3 +67,4 @@ def test_clear_dict(inventory_test):
 
 def test_count_all():
     assert count_all(["cat", "dog", "cat"]) == {"cat": 2, "dog": 1}
+    assert count_all("hello") == {"h": 1, "e": 1, "l": 2, "o": 1}

@@ -1,8 +1,8 @@
-
 import pytest
 
 from dictionary.dictionary import (
     clear_dict,
+    collect_indexes,
     copy_dict,
     count_all,
     format_user,
@@ -68,3 +68,10 @@ def test_clear_dict(inventory_test):
 def test_count_all():
     assert count_all(["cat", "dog", "cat"]) == {"cat": 2, "dog": 1}
     assert count_all("hello") == {"h": 1, "e": 1, "l": 2, "o": 1}
+
+
+def test_collect_indexes():
+    d = collect_indexes("hello")
+    assert d['h'] == [0]
+    assert d['e'] == [1]
+    assert d == {'h': [0], 'e': [1], 'l': [2, 3,], 'o': [4]}
